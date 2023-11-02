@@ -1,0 +1,304 @@
+:root{
+    --w:#000000;
+    --s:dimgrey;
+    --a:#2b89d6;
+    --a2:#0e0b5d;
+    --k:rgba(167, 31, 31, 0.384);
+    --p2:2rem;
+    --p1: 1rem;
+    --p0: 0.5rem
+  }
+  body{
+   background-repeat: no-repeat;
+   background-size: cover;
+    margin:0
+    }
+  
+  h1, h2{
+    text-align:center
+  }
+  h1{
+    font-style: italic;
+  }
+  
+  #wrapper{
+    margin: 0;
+   width:100%
+     }
+  
+  main, nav,{
+  font-family:Poppins,Roboto, Arial, sans-serif}
+  
+  header{
+  text-align:center;
+    padding:var(--p2) 0 0;
+   }
+  
+  header h1{
+   font-family:Nothing You Could Do;
+    font-size:5vw;
+    color:var(--k)
+  }
+  
+  header img{
+  width:150px;
+  height:150px;
+  border-radius:25px;
+    align-self:center;
+  justify-self:end}
+  
+  nav{
+    color:var(--w);
+    text-align:center
+  }
+  
+  nav{
+  position:sticky;
+    top:0;
+    background:var(--k);
+    padding:var(--p0);
+  }
+  
+  nav ul{
+  list-style:none;
+    display:grid;
+    grid-template:auto/repeat(2,1fr);
+  }
+  
+  nav li a{
+  color:var(--w);
+  font-weight:900;
+  font-size:1.5vw}
+  
+  main{
+    display:grid;
+    grid-template:auto/3fr 1fr;
+    grid-gap:1rem;
+    padding:var(--p1) var(--p2)
+  }
+  
+  section{
+  background:rgba(250, 250, 250, 0.207);
+    padding:var(--p0) var(--p1) var(--p1);
+  margin:1rem 0;
+  border-radius:1rem}
+  
+  #work{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:var(--p1) var(--p2)
+  }
+  
+  .card{
+    width:calc(50% - 1rem);
+    background:#fff;
+    border-radius:calc(25px - 1rem);
+    box-shadow:1px 1px 2px rgba(0,0,0,.1),2px 2px 4px 1px rgba(0,0,0,.3)
+   }
+  
+  .card-header img{
+    width:100%;
+    border-radius:calc(25px - 1rem) calc(25px - 1rem) 0 0
+  }
+  
+  .card-body{
+    padding:var(--p0) var(--p1);
+    
+  }
+  
+  
+  
+  h2{
+    width:100%;
+    font-family:Nothing You Could Do;
+    font-size:3vw;
+    margin:0 0 1rem
+  }
+  
+  h3{
+    font-size:1.5vw;
+    font-family:Poppins, Roboto, Arial, sans-serif;
+    margin:0.5rem 0 1rem
+  }
+  
+  h4{
+    margin:auto;
+    }
+  
+  h4 a:not(:hover), h3 a:not(:hover){
+    color:var(--a2);
+    text-decoration:none;
+   
+  }
+  .card-body a{
+    text-decoration:none;
+    color:var(--a);
+    }
+  
+  h4 a:after, h3 a:after, .card-body a:after{
+    content:"\00A0\00BB"
+  }
+  
+  aside small{
+    background:var(--a);
+    color:var(--w);
+    padding:5px;
+      border-radius:25px;
+    line-height:3;
+    margin-right:5px
+  }
+  
+  small a{
+    color:var(--w);
+    text-decoration:none
+  }
+  
+  .ui{
+    background:var(--a2)
+  }
+  
+  .misc{
+  background:dimgrey;
+  }
+  
+  .glass{
+    background:var(--w);
+    }
+  
+  .glass a{
+    color:var(--s)
+  }
+a {
+  text-decoration: none;
+}
+
+.-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 56px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.-btn:hover {
+  opacity: .8;
+}
+
+.-bg {
+  background: #1c449b;
+}
+
+.-txt {
+  color: #fff;
+}
+
+.-xs {
+  font-size: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+  background-color: #151418;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo a span {
+  color: #8739fa;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  color: #fff;
+}
+
+.menu:hover a {
+  opacity: 0.4;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #151418;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
